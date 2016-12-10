@@ -1,0 +1,465 @@
+@charset "utf-8";
+/* CSS Document */
+
+.horizontal_center {
+    width:100%;
+    text-align:center;
+    margin:30px auto;
+}
+.horizontal_center .page_body {
+    width:75%;
+    margin:0px auto;
+}
+.select_box {
+    vertical-align:sub;
+}
+
+#ToIndex {
+    display:block;
+    width:196px;
+    height:112px;
+    float:left;
+    background:url(../images/TB1IJoPNVXXXXc0XpXXwu0bFXXX.png) no-repeat;
+    background-size:196px 112px;
+    background-position:-70px 0px;
+}
+
+/*搜素框样式*/
+#search {
+    width:500px;
+    height:40px;
+    line-height::40px;
+    padding:2px 0px 0px 2px;
+    background-color:#F30;
+    float:right;
+}
+.search_text, .search_bt, .select_item {
+    display:block;
+    height:38px;
+    border:none;
+    vertical-align:middle;
+    margin:0px;
+    padding:0px;
+    float:left;
+}
+#search .select_item {
+    width:15%;
+    text-indent:5px;
+    appearance:none;
+    -moz-appearance:none;
+    background-color:#DDD;
+}
+
+.search_text {
+    text-indent:10px;
+    width:65%;
+}
+
+.search_bt {
+    width:20%;
+    font-size:16px;
+    font-weight:bold;
+    letter-spacing:10px;
+    color:#FFF;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+/* 活动图片样式 */
+#box_11 {
+    position:absolute;
+    top:40px;
+    left:0px;
+}
+
+/* 购物车内容样式 */
+#cart_body {
+    clear:both;
+}
+/* 购物车标题栏样式 */
+#title {
+    width:100%;
+    height:40px;
+    line-height:40px;
+    border-bottom:3px solid #CCC;
+    padding:0px;
+    position:relative;
+}
+#title ul.title_nav {
+    margin:0px;
+    position:absolute;
+}
+#title .title_nav li {
+    display:inline-block;
+    padding-right:40px;
+    font-weight:bold;
+    float:left;
+}
+#title .title_nav li .title_name {
+    font-size:20px;
+}
+#title .title_nav li .shop_num {
+    display:inline-block;
+    padding-left:5px;
+    color:#F30;
+}
+#title .title_other {
+    float:right;
+    font-size:13px;
+}
+#title .title_other span, #title .title_other input {
+    display:inline-block;
+    padding:0px 5px;
+}
+#title .title_other .price_total {
+    font-weight:bold;
+    font-size:14px;
+    color:#F30;
+}
+#title .title_other .settlement {
+    width:60px;
+    height:30px;
+    border:none;
+    color:#FFF;
+    font-weight:bold;
+    letter-spacing:5px;
+}
+#header {
+    clear:both;
+    margin:10px 0px;
+    text-align:left;
+    font-size:12px;
+    height:50px;
+    line-height:50px;
+}
+#header .header_title {
+    display:inline-block;
+    text-align:left;
+}
+#header .shop_select {
+    width:110px;
+}
+#header .shop_msg {
+    width:350px;
+}
+#header .shop_price {
+    width:120px;
+}
+#header .shop_num {
+    width:120px;
+}
+#header .shop_total {
+    width:120px;
+}
+#header .shop_operation {
+    width:120px;
+}
+#shop_main {
+}
+#shop_main .shop_content {
+}
+#shop_main .shop_content .content_name {
+    text-align:left;
+    font-size:12px;
+    height:50px;
+    line-height:50px;
+}
+#shop_main .shop_content .content_name .title_list {
+    display:inline-block;
+}
+#shop_main .shop_content .content_name .mall_shop {
+    width:30px;
+    height:30px;
+    background-image:url(../images/icon/mall_shop.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:25px 25px;
+    vertical-align:middle;
+}
+#shop_main .shop_content .content_name .shop_name {
+    margin-right:15px;
+}
+#shop_main .shop_content .content_name img.wangwang {
+    vertical-align:middle;
+    position:relative;
+    animation-name:skip;
+    animation-duration:0.5s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+@keyframes skip {
+    0% {
+        top:0px;
+    }
+    25% {
+        top:-2px;
+    }
+    50% {
+        top:0px;
+    }
+    75% {
+        top:2px;
+    }
+    100% {
+        top:0px;
+    }
+}
+#shop_main .shop_content .content_name .coupon {
+    width:80px;
+    height:30px;
+    line-height:30px;
+    color:#F30;
+    border:1px dashed #F30;
+    border-left:1px solid #F30;
+    margin-left:15px;
+    background:url(../images/icon/dro_coupon.png) 60px center no-repeat;
+    background-size:10px 10px;
+}
+#shop_main .shop_content .content_name .coupon .arrow {
+    display:inline-block;
+    width:0px;
+    height:0px;
+    border-width:15px 8px;
+    border-color:transparent transparent transparent #F30;
+    border-style:solid;
+    vertical-align:middle;
+}
+
+#shop_main .shop_content .content_main {
+    width:100%;
+    border:1px solid #CCC;
+    border-bottom:none;
+}
+#shop_main .shop_content .content_main .product_text {
+    font-size:13px;
+    display:inline-block;
+    padding:0px 5px;
+    color:#444;
+}
+#shop_main .shop_content .content_main .product_title {
+    height:40px;
+    line-height:40px;
+    text-align:left;
+    border-bottom:1px solid #CCC;
+    padding:0px 40px;
+}
+#shop_main .shop_content .content_main .main_msg {
+    text-align:left;
+    padding:20px 5px;
+    border-bottom:1px solid #CCC;
+}
+#shop_main .shop_content .content_main .product_link {
+    text-decoration:none;
+}
+#shop_main .shop_content .content_main .main_msg .product_msg {
+    display:inline-block;
+    padding-right:10px;
+    width:470px;
+    height:100%;
+    vertical-align:top;
+    text-align:left;
+}
+#shop_main .shop_content .content_main .main_msg .product_msg  .select_box {
+    display:block;
+    float:left;
+}
+#shop_main .shop_content .content_main .main_msg .product_msg  .product_img {
+    display:block;
+    float:left;
+    margin:0px 10px;
+}
+#shop_main .shop_content .content_main .main_msg .product_msg .product_main {
+    width:200px;
+    height:80px;
+    float:left;
+}
+#shop_main .shop_content .content_main .main_msg .product_msg .product_main .product_title {
+    display:block;
+    float:left;
+    width:200px;
+    height:64px;
+    line-height:15px;
+    padding:0px;
+    margin:0px;
+    border:none;
+    vertical-align:top;
+}
+#shop_main .shop_content .content_main .main_msg .product_msg .product_main .product_title .product_text {
+    color:#111;
+}
+#shop_main .shop_content .content_main .main_msg .product_msg .product_main .product_title .product_text:hover {
+    color:#F30;
+}
+#shop_main .shop_content .content_main .main_msg .product_msg .product_main .product_surance {
+    display:block;
+    height:16px;
+    padding:0px 5px;
+}
+#shop_main .shop_content .content_main .main_msg .product_msg .product_type {
+    display:block;
+    float:right;
+    width:140px;
+    height:100%;
+}
+#shop_main .shop_content .content_main .main_msg .product_price {
+    display:inline-block;
+    width:120px;
+    text-align:center;
+    vertical-align:top;
+    text-align:left;
+}
+#shop_main .shop_content .content_main .main_msg .product_price .price_common {
+    display:block;
+    height:20px;
+    line-height:20px;
+}
+#shop_main .shop_content .content_main .main_msg .product_price .original_price {
+    text-decoration:line-through;
+}
+#shop_main .shop_content .content_main .main_msg .product_price .selling_price {
+    font-weight:bold;
+}
+#shop_main .shop_content .content_main .main_msg .product_num {
+    display:inline-block;
+    width:120px;
+    text-align:center;
+    vertical-align:top;
+    text-align:left;
+}
+#shop_main .shop_content .content_main .main_msg .product_num .subtract {
+    width:20px;
+    height:25px;
+    line-height:25px;
+    background-color:#DDD;
+    float:left;
+    text-align:center;
+    cursor:default;
+}
+#shop_main .shop_content .content_main .main_msg .product_num .product_nums {
+    width:50px;
+    height:23px;
+    line-height:23px;
+    background-color:#FFF;
+    border:1px solid #999;
+    float:left;
+    text-align:center;
+    font-size:12px;
+}
+#shop_main .shop_content .content_main .main_msg .product_num .add {
+    width:20px;
+    height:25px;
+    line-height:25px;
+    background-color:#DDD;
+    float:left;
+    text-align:center;
+    cursor:default;
+}
+#shop_main .shop_content .content_main .main_msg .product_total {
+    display:inline-block;
+    width:120px;
+    text-align:center;
+    vertical-align:top;
+    text-align:left;
+}
+#shop_main .shop_content .content_main .main_msg .product_total .product_text {
+    color:#F30;
+    font-weight:bold;
+    font-size:14px;
+}
+#shop_main .shop_content .content_main .main_msg .product_operation {
+    display:inline-block;
+    width:120px;
+    text-align:center;
+    vertical-align:top;
+    text-align:left;
+}
+#shop_main .shop_content .content_main .main_msg .product_operation .remove {
+    display:block;
+    color:#111;
+    height:20px;
+    line-height:20px;
+    cursor:pointer;
+}
+#shop_main .shop_content .content_main .main_msg .product_operation .delete {
+    display:block;
+    color:#111;
+    height:20px;
+    line-height:20px;
+    cursor:pointer;
+}
+/* 价格弹窗 */
+#settle_box {
+    position:absolute;
+    width:300px;
+    height:100px;
+    border:1px solid #CCC;
+    border-top:4px solid #900;
+    background-color:#FFF;
+    z-index:10;
+    padding:50px 20px 0px;
+    display:none;
+}
+#settle_box .close {
+    width:40px;
+    height:40px;
+    background-image:url(../images/icon/close_red.png);
+    background-repeat:no-repeat;
+    background-size:30px 30px;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+#settle_box .nums, #settle_box .price_total {
+    display:inline-block;
+    padding:0px 5px;
+    color:#900;
+}
+
+
+
+
+
+
+/* 底部样式设置 */
+#footer {
+    width:85%;
+    margin:0px auto;
+    text-align:left;
+    padding-right:60px;
+}
+#tmall_copyright {
+    padding-left:60px;
+    font-size:12px;
+}
+#tmall_copyright p {
+    clear:both;
+    height:20px;
+    line-height:20px;
+    margin:20px 0px;
+    padding:0px;
+    color:#999;
+}
+#tmall_copyright a {
+    color:#666;
+    margin-right:3px;
+    font-size:12px;
+}
+#tmall_copyright a:hover {
+    color:#900;
+    text-decoration:underline;
+}
+#tmall_copyright div {
+    margin:20px 0px;
+}
+#tmall_copyright div span {
+    display:inline-block;
+    color:#999;
+    margin-right:80px;
+    padding:5px 0px;
+}
+#tmall_copyright div b {
+    color:#666;
+    font-weight:normal;
+    font-size:12px;
+    padding-left:4px;
+}

@@ -1,0 +1,464 @@
+<!doctype html>
+<html>
+<!--
+        Author:许纯玲 阿玲 纯纯 洗纯纯 小纯纯 纯（假装这是一个团队o(*￣︶￣*)o）
+        
+        Creation Date:2016-11-20
+-->
+<head>
+<meta charset="utf-8">
+<title>天猫商城模仿-购物车</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/ShoppingCart.css" />
+<script type="text/javascript" src="js/tool.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/ShoppingCart.js"></script>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div id="navBar">
+        <div id="navBarLeft">
+            <span>喵，欢迎来天猫</span>
+            <a href="login.html" id="login" class="a_style">请登录</a>
+            <a href="register.html" id="register" class="a_style">免费注册</a>
+        </div>
+        <div id="navBarRight">
+            <ul class="navBarRight">
+                <li>
+                    <div class="box_nav" id="myTB">
+                        <a href="#" class="a_style">我的淘宝<span class="xiala"></span></a>
+                        <ul class="box box_l box_myTB">
+                            <li>
+                                <a href="#" class="a_style">已买到的宝贝</a>
+                            </li>
+                            <li>
+                                <a href="#" class="a_style">已卖出的宝贝</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="box_nav">               
+                        <a href="#" id="myPP" class="a_style"><span class="dot pinpai"></span>我关注的品牌</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box_nav"> 
+                        <a href="#" id="mySC" class="a_style"><span class="dot gouwuche"></span>购物车 <span id="num">0</span> 件</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box_nav" id="myLove">
+                        <a href="#" class="a_style">收藏夹<span class="xiala"></span></a>
+                        <ul class="box box_l box_myLove">
+                            <li>
+                                <a href="#" class="a_style">收藏的宝贝</a>
+                            </li>
+                            <li>
+                                <a href="#" class="a_style">收藏的店铺</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <span>|</span>
+            <ul class="navBarRight">
+                <li>
+                    <div class="box_nav" id="mobileversion">
+                        <a href="#" class="a_style"><span class="dot phone"></span>手机版</a>
+                        <ul class="box box_l box_mobileversion">
+                            <li>
+                                <a href="#" class="a_style"><img src="images/erweima1.png" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="box_nav"> 
+                        <a href="#" id="tbw" class="a_style">淘宝网</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box_nav"> 
+                        <a href="#" id="qyg" class="a_style">企业购</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box_nav" id="support">
+                        <a href="#" class="a_style">商家支持<span class="xiala"></span></a>
+                        <div class="box box_r box_support">
+                            <h3>商家：</h3>
+                            <ul class="pox_support">
+                                <li>
+                                    <a href="#" class="a_style inline">商家中心</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="a_style inline">商家入驻</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#" class="a_style inline">运营服务</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="a_style inline">商家品控</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#" class="a_style inline">商家工具</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="a_style inline">商家规则</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#" class="a_style inline">天猫智库</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="a_style inline">喵言喵语</a>
+                                </li>
+                            </ul>
+                            <h3>帮助：</h3>
+                            <ul class="pox_support">
+                                <li>
+                                    <a href="#" class="a_style inline">帮助中心</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box_nav" id="wzdh">
+                        <a href="#" class="a_style"><span class="dot list"></span>网站导航<span class="xiala"></span></a>
+                        <div class="box box_r box_wzdh">
+                            <div id="hot">
+                                <h3>热点推荐 Hot</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="a_style">天猫超市</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">喵鲜生</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">科技新品</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">女装新品</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">酷玩街</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">内衣新品</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">试美妆</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">运动新品</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">时尚先生</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">精明妈咪</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">吃乐会</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">企业采购</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="market">
+                                <h3>行业市场 Market</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="a_style">美妆</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">电器</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">女装</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">男装</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">女鞋</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">男鞋</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">内衣</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">箱包</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">运动</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">母婴</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">家装</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">医药</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">食品</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">配饰</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">汽车</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="brand">
+                                <h3>品牌风尚 Brand</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="a_style">尚天猫</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">大牌街</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">潮牌街</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">天猫原创</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">什么牌子好</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="help">
+                                <h3>服务指南 Help</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="a_style">帮助中心</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">品质保障</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">特色服务</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">7天退换货</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="horizontal_center">
+        <div class="page_body">
+            <!-- 顶部首页链接栏 -->
+            <a href="index.html" id="ToIndex"></a>
+            <!-- 搜索框部分 -->
+            <div id="search">
+                <select class="select_item">
+                    <option>宝贝</option>
+                    <option>店铺</option>
+                    <option>天猫</option>
+                </select>
+                <input type="text" class="search_text" value="" />
+                <input type="button" class="search_bt" value="搜索" />
+            </div>
+        </div>
+        
+
+    </div>
+    
+    <!-- 购物车内容 -->
+    <div class="horizontal_center">
+        <div id="cart_body" class="page_body">
+            <!-- 顶部导航 -->
+            <div id="title">
+                <ul class="title_nav">
+                    <li><span class="title_name">全部商品</span><span class="shop_num">2</span></li>
+                    <li><span class="title_name">降价商品</span><span class="shop_num">0</span></li>
+                    <li><span class="title_name">库存紧张</span><span class="shop_num">0</span></li>
+                </ul>
+                <div class="title_other">
+                    <span class="selected_shop">已选商品（不含运费）</span>
+                    <span class="price_total">0.00</span>
+                    <input class="settlement" type="button" value="结算" />
+                </div>
+            </div>
+            <!-- 点击结算按钮弹出对话框 -->
+            <div id="settle_box">
+                <div class="close"></div>
+                <p>你总共选了<span class="nums">0</span>件商品，总价为<span class="price_total">0.00</span>元</p>
+                <p style="font-size:12px; color:#999;">计价功能存在些问题[2016-11-24]</p>
+            </div>
+            
+            <!--  -->
+            <div id="header">
+                <input type="checkbox" value="select_all" id="select_all" class="select_box" />
+                <span class="header_title shop_select">全选</span>
+                <span class="header_title shop_msg">商品信息</span>
+                <span class="header_title shop_price">单价</span>
+                <span class="header_title shop_num">数量</span>
+                <span class="header_title shop_total">金额</span>
+                <span class="header_title shop_operation">操作</span>
+            </div>
+            <!--  店铺 -->
+            <div id="shop_main">
+                <div class="shop_content">
+                    <div class="content_name">
+                        <input type="checkbox" class="select_box select_sub title_list" />
+                        <span class="mall_shop title_list"></span>
+                        <span class="shop_name title_list">店铺：三只松鼠旗舰店</span>
+                        <span class="wangwang title_list"><a href="#"><img src="images/icon/wangwang.png" class="wangwang" /></a></span>
+                        <span class="coupon title_list"><span class="arrow"></span>优惠券</span>
+                    </div>
+                    <div class="content_main">
+                        <div class="product_title">
+                            <span class="product_text">主人感恩季</span>
+                            <span class="product_text">满69元，享包邮</span>
+                        </div>
+                        <div class="product_content">
+                            <div class="main_msg">
+                                <div class="product_msg">
+                                    <input type="checkbox" class="select_box select_sub" />
+                                    <a href="#" class="product_link product_img"><img src="images/商品图/TB1AISCOXXXXXXlXpXXXXXXXXXX_!!0-item_pic.jpg_80x80.jpg" /></a>
+                                    <div class="product_main">
+                                        <a href="#" class="product_link product_title"><span class="shop_title product_text">【三只松鼠_约辣辣条200g】休闲零食大刀肉特产面素食辣片</span></a>
+                                        <div class="product_surance">
+                                            <a href="#" class="product_link"><img src="images/icon/creditcard.png"></a>
+                                            <a href="#" class="product_link"><img src="images/icon/7day.png"></a>
+                                            <a href="#" class="product_link"><img src="images/icon/promise.png"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product_type">
+                                        <span class="product_text">口味：变态辣</span>
+                                    </div>
+                                </div>
+                                <div class="product_price">
+                                    <span class="original_price product_text price_common">￥<span class="original_price">25.00</span></span>
+                                    <span class="product_text price_common">￥<span class="selling_price">9.90</span></span>
+                                </div>
+                                <div class="product_num">
+                                    <span class="subtract">-</span>
+                                    <span class="product_nums">2</span>
+                                    <span class="add">+</span>
+                                </div>
+                                <div class="product_total">
+                                    <span class="product_text">￥<span class="price_total"></span></span>
+                                </div>
+                                <div class="product_operation">
+                                    <span class="remove product_text">移入收藏夹</span>
+                                    <span class="delete product_text">删除</span>
+                                </div>
+                            </div>
+                            <div class="main_msg">
+                                <div class="product_msg">
+                                    <input type="checkbox" class="select_box select_sub" />
+                                    <a href="#" class="product_link product_img"><img src="images/商品图/TB1.3erOpXXXXcCXpXXXXXXXXXX_!!0-item_pic.jpg_80x80.jpg" /></a>
+                                    <div class="product_main">
+                                        <a href="#" class="product_link product_title"><span class="shop_title product_text">俏嘴巴清水鱼 湖南特产小鱼仔 零食熟食 毛毛鱼仔300g盒装小鱼干</span></a>
+                                        <div class="product_surance">
+                                            <a href="#" class="product_link"><img src="images/icon/creditcard.png"></a>
+                                            <a href="#" class="product_link"><img src="images/icon/7day.png"></a>
+                                            <a href="#" class="product_link"><img src="images/icon/promise.png"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product_type">
+                                        <span class="product_text">口味：酱汁味20包 二星辣</span>
+                                    </div>
+                                </div>
+                                <div class="product_price">
+                                    <span class="original_price product_text price_common">￥<span class="original_price">23.80</span></span>
+                                    <span class="product_text price_common">￥<span class="selling_price">13.80</span></span>
+                                </div>
+                                <div class="product_num">
+                                    <span class="subtract">-</span>
+                                    <span class="product_nums">4</span>
+                                    <span class="add">+</span>
+                                </div>
+                                <div class="product_total">
+                                    <span class="product_text">￥<span class="price_total"></span></span>
+                                </div>
+                                <div class="product_operation">
+                                    <span class="remove product_text">移入收藏夹</span>
+                                    <span class="delete product_text">删除</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- 底部 -->
+    <div class="horizontal_center">
+        <div id="footer">
+        <div id="tmall_copyright">
+            <p>
+                <a href="#" class="a_style">阿里巴巴集团</a>|
+                <a href="#" class="a_style">淘宝网</a>|
+                <a href="#" class="a_style">天猫</a>|
+                <a href="#" class="a_style">聚划算</a>|
+                <a href="#" class="a_style">全球速卖通</a>|
+                <a href="#" class="a_style">阿里巴巴国际交易市场</a>|
+                <a href="#" class="a_style">1688</a>|
+                <a href="#" class="a_style">阿里妈妈</a>|
+                <a href="#" class="a_style">阿里旅行·去啊</a>|
+                <a href="#" class="a_style">阿里云计算</a>|
+                <a href="#" class="a_style">YunOS</a>|
+                <a href="#" class="a_style">阿里通信</a>|
+                <a href="#" class="a_style">一淘</a>|
+                <a href="#" class="a_style">万网</a>|
+                <a href="#" class="a_style">高德</a>|
+                <a href="#" class="a_style">UC</a>|
+                <a href="#" class="a_style">友盟</a>|
+                <a href="#" class="a_style">虾米</a>|
+                <a href="#" class="a_style">天天动听</a>|
+                <a href="#" class="a_style">来往</a>|
+                <a href="#" class="a_style">钉钉</a>|
+                <a href="#" class="a_style">支付宝</a>
+            </p>
+            <p>
+                <a href="#" class="a_style">关于淘宝</a>
+                <a href="#" class="a_style">合作伙伴</a>
+                <a href="#" class="a_style">营销中心</a>
+                <a href="#" class="a_style">廉正举报</a>
+                <a href="#" class="a_style">联系客服</a>
+                <a href="#" class="a_style">开放平台</a>
+                <a href="#" class="a_style">诚征英才</a>
+                <a href="#" class="a_style">联系我们</a>
+                <a href="#" class="a_style">网站地图</a>
+                <a href="#" class="a_style">法律声明</a>
+            </p>
+            <div>
+                <span>网络文化经营许可证：<a href="#" class="a_style">浙网文[2015]0295-065号</a></span>
+                <span>增值电信业务经营许可证：<a href="#" class="a_style">浙B2-20110446</a></span>
+                <span>信息网络传播视听节目许可证：1109364号</span>
+                <br />
+                <span>互联网违法和不良信息举报电话：0571-81683755 blxx@list.alibaba-inc.com</span>
+                <br />
+                <b>© 2003-2016 TMALL.COM 版权所有</b>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

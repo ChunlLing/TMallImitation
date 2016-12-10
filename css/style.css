@@ -1,0 +1,262 @@
+@charset "utf-8";
+/* 通用样式 */
+
+body {
+    position:relative;
+    min-width:1318px;
+}
+
+body, a {
+    margin:0px;
+    padding:0px;
+    border:none;
+    outline:none;
+    -webkit-font-smoothing:antialised;
+}
+
+.horizontal_center {
+    width:100%;
+    text-align:center;
+    margin:30px auto;
+    padding:auto;
+}
+
+ul {
+    list-style-type:none;
+    padding:0px;
+}
+
+.a_style {
+    text-decoration:none;
+    color:#888;
+}
+
+.a_style:hover, .a_style:active {
+    color:#900;
+}
+
+
+.xiala {
+    display:inline-block;
+    margin-left:5px;
+    width:5px;
+    height:3px;
+    margin-bottom:2px;
+    background:url(../images/icon/direction.png) 0px -90px no-repeat;
+}
+
+.dot {
+    display:inline-block;
+    margin-right:5px;
+    width:10px;
+    height:10px;
+    background-repeat:no-repeat;
+    background-image:url(../images/icon/dot1.png);
+    background-position:center;
+    background-size:15px 15px;
+}
+
+/* 我关注的品牌图标 */
+.dot.pinpai {
+    background-image:url(../images/icon/pinpai.png);
+}
+/* 购物车图标 */
+.dot.gouwuche {
+    background-image:url(../images/icon/gouwuche1.png);
+}
+/* 手机版图标 */
+.dot.phone {
+    background-image:url(../images/icon/phone.png);
+}
+/* 网站导航图标 */
+.dot.list {
+    background-image:url(../images/icon/list.png);
+}
+
+#header {
+    width:100%;
+}
+
+/* 导航栏样式 */
+#navBar {
+    min-width:1283px;
+    position:relative;
+    height:30px;
+    line-height:30px;
+    font-size:12px;
+    background:#EEE;
+    color:#888;
+    border-bottom:1px solid #CCC;
+    font-family:"Adobe 黑体 Std R", "Adobe 仿宋 Std R", "微软雅黑";
+}
+
+#navBarLeft a {
+    margin-right:20px;
+}
+
+
+/* 设置左边div块样式 */
+#navBarLeft {
+    margin-left:20px;
+    float:left;
+}
+
+#navBarLeft span {
+    padding-right:20px;
+}
+
+/* 设置右边div块样式 */
+#navBarRight {
+    width:750px;
+    float:right;
+    height:30px;
+    line-height:30px;
+    padding:0px;
+}
+
+.navBarRight {
+    display:inline;
+    margin:0px;
+}
+
+.navBarRight li {
+    display:inline-block;
+    position:relative;
+}
+
+div.box_nav {
+    display:inline-block;
+    position:relative;
+    padding:0px 5px;
+}
+
+/* 下拉框设置 */
+
+.box {
+    z-index:20;
+    position:absolute;
+    top:30px;
+    border:1px solid #CCC;
+    border-top:none;
+    padding-left:5px;
+}
+
+.box_l {
+    left:0px;
+}
+
+.box_r {
+    right:0px;
+}
+
+
+/* 我的淘宝下拉框设置 */
+.box_myTB {
+    width:100px;
+    height:60px;
+    background:#fff;
+    display:none;
+}
+
+/* 收藏夹下拉框设置 */
+.box_myLove {
+    width:100px;
+    height:60px;
+    background:#fff;
+    display:none;
+}
+
+/* 手机版下拉框设置 */
+.box_mobileversion {
+    padding:5px;
+    background:#fff;
+    display:none;
+}
+
+/* 商家支持下拉框设置 */
+.box_support {
+    width:130px;
+    padding:0px 5px;
+    background:#fff;
+    display:none;
+}
+
+.box_support h3 {
+    margin:0px;
+    padding:5px;
+    background:yellow;
+    height:20px;
+    line-height:20px;
+}
+
+.pox_support {
+    margin:0px;
+    padding:0px 2px;
+}
+
+.pox_support li {
+    display:inline;
+    margin:0px 5px;
+}
+
+/* 网站导航下拉框设置 */
+.box_wzdh {
+    width:1050px;
+    height:220px;
+    background:#fff;
+    display:none;
+}
+
+.box_wzdh h3 {
+    margin:0px;
+    margin-left:25px;
+    padding:-20px 0px 0px 25px;
+    font-size:16px;
+}
+
+.box_wzdh ul li {
+    float:left;
+    margin:0px 25px;
+}
+
+.box_wzdh ul li a {
+    color:#222;
+}
+
+#hot {
+    border-right:1px solid #ccc;
+    margin:20px 0px;
+    padding-right:0px;
+    width:28%;
+    float:left;
+}
+
+#hot h3 {
+    color:#F60;
+}
+
+#market {
+    border-right:1px solid #ccc;
+    margin:20px 0px;
+    width:29%;
+    float:left;
+}
+
+#market h3 {
+    color:#06F;
+}
+
+#brand {
+    border-right:1px solid #ccc;
+    margin:20px 0px;
+    width:26%;
+    float:left;
+}
+
+#help {
+    margin:20px 0px;
+    width:13%;
+    float:left;
+}
+
+

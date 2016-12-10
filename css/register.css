@@ -1,0 +1,303 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    position:relative;
+    padding:0px;
+    margin:0px;
+    top:-30px;
+}
+
+#screen {
+    position:absolute;
+    top:0px;
+    left:0px;
+    background:rgba(128,128,128,0.4);
+    z-index:10;
+}
+
+.close {
+    width:40px;
+    height:40px;
+    background-image:url(../images/icon/close_red.png);
+    background-repeat:no-repeat;
+    background-size:30px 30px;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+/* 协议样式 */
+#register_agreenment {
+    border:2px solid #CCC;
+    border-top:3px solid #900;
+    width:700px;
+    height:420px;
+    padding:10px 20px;
+    font-size:12px;
+    color:#666;
+    background-color:#FFF;
+    position:absolute;
+    z-index:11;
+}
+#register_agreenment p, #register_agreenment li {
+    text-align:left;
+}
+#register_agreenment .warm {
+    color:#000;
+    font-weight:bold;
+}
+#register_agreenment .underline {
+    text-decoration:underline;
+}
+#register_agreenment a.link_style {
+    text-decoration:none;
+    color:#C00;
+    font-size:14px;
+}
+#register_agreenment ol {
+    margin-left:0px;
+}
+#register_agreenment li {
+    padding-left:0px;
+    margin:5px 0px;
+}
+#register_agreenment .agree {
+    display:inline-block;
+    font-size:16px;
+    font-weight:bold;
+    letter-spacing:5px;
+    color:#FFF;
+    width:200px;
+    height:40px;
+    line-height:40px;
+    border:none;
+    background-color:#900;
+    margin:0px auto;
+}
+
+/* 标签页样式 */
+#tag {
+    width:100%;
+    height:60px;
+    line-height:58px;
+    border-bottom:2px solid #CCC;
+    text-align:center;
+}
+#tag .tag_general {
+    display:inline-block;
+    width:200px;
+    margin:0px;
+    padding:0px;
+    font-size:20px;
+    font-weight:bold;
+}
+/* 标签页面内容样式 */
+#tag_content {
+}
+#tag_content .tag {
+    margin:50px auto 0px;
+}
+#tag_content .tag span {
+    display:inline-block;
+}
+#tag_content .tag .row {
+    height:40px;
+    line-height:40px;
+    text-align:left;
+}
+#tag_content .tag .row .item {
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:15px;
+    width:80px;
+    text-align:right;
+}
+#tag_content .tag .next {
+    display:block;
+    width:200px;
+    height:40px;
+    border:none;
+    background-color:#900;
+    font-size:14px;
+    font-weight:bold;
+    color:#FFF;
+    letter-spacing:5px;
+    margin:0px auto;
+    cursor:pointer;
+}
+#tag_content .tag .confirm {
+    width:500px;
+    height:100px;
+    border:2px solid #CCC;
+    font-size:14px;
+    padding:30px 20px;
+    text-align:left;
+    text-indent:26px;
+    position:absolute;
+    background-color:#FFF;
+    display:none;
+}
+#tag_content .tag1 {
+    width:520px;
+}
+#tag_content .tag1 .row {
+    margin:40px auto;
+}
+#tag_content .tag1 .row select {
+    display:inline-block;
+    margin-right:0px;
+    width:200px;
+    height:40px;
+    font-size:14px;
+    font-weight:bold;
+}
+#tag_content .tag1 .row .mobilephone {
+    display:inline-block;
+    margin-left:0px;
+    width:200px;
+    height:40px;
+    box-sizing:border-box;
+    border-width:1px;
+    color:#666;
+    font-size:14px;
+    font-weight:bold;
+}
+#tag_content .tag1 .row .confirm_slider {
+    display:inline-block;
+    vertical-align:middle;
+    width:300px;
+    height:40px;
+    border:1px solid #CCC;
+}
+#tag_content .tag1 .row .confirm_slider .slider {
+    width:40px;
+    height:40px;
+    border:1px solid #AAA;
+    background-color:#C30;
+}
+#tag_content .tag2, #tag_content .tag3 {
+    width:800px;
+}
+#tag_content .tag2 .row, #tag_content .tag3 .row  {
+    position:relative;
+}
+#tag_content .tag2 .tip_name {
+}
+#tag_content .tag .tip_name .tip_title {
+    font-size::16px;
+    font-weight:bold;
+    color:#900;
+    margin-right:10px;
+}
+#tag_content .tag .tip_name .tip_explain {
+    font-size:12px;
+    color:#900;
+    margin-right:10px;
+}
+#tag_content .tag .tip_name .tip_declaration {
+    font-size:12px;
+    color:#06F;
+}
+#tag_content .tag .result_tip {
+    width:20px;
+    height:20px;
+    vertical-align:middle;
+    margin-left:5px;
+}
+#tag_content .tag .success {
+    background:url(../images/icon/success.png) center center no-repeat;
+    display:none;
+}
+#tag_content .tag .error {
+    background:url(../images/icon/error_warm.png) center center no-repeat;
+    display:none;
+}
+#tag_content .tag2 .row_address {
+    height:auto;
+}
+#tag_content .tag2 .text, #tag_content .tag3 .text {
+    width:200px;
+    height:20px;
+    color:#333;
+}
+#tag_content .tag2 select {
+    width:200px;
+}
+#tag_content .tag2 select.address {
+    width:150px;
+}
+#tag_content .tag2 textarea {
+    width:60%;
+    height:100px;
+    font-size:12px;
+    color:#666;
+    display:block;
+    margin:0px 100px;
+}
+#tag_content .tag2 .sure {
+    display:block;
+    width:150px;
+    height:40px;
+    background-color:#F60;
+    border:none;
+    color:#FFF;
+    font-size:14px;
+    letter-spacing:10px;
+    cursor:pointer;
+    margin:20px auto;
+}
+#tag_content .tag3 .free {
+    color:#999;
+    font-size:12px;
+}
+#tag_content .tag3 .serve_agreemenet {
+    color:#900;
+    font-size:12px;
+    text-decoration:none;
+}
+#tag_content .tag3 .sure {
+    display:block;
+    width:150px;
+    height:40px;
+    background-color:#F60;
+    border:none;
+    color:#FFF;
+    font-size:12px;
+    cursor:pointer;
+    margin:40px auto;
+}
+#tag_content .tag4 .success_register {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    background:url(../images/icon/registerSuccess.png) center center no-repeat;
+    vertical-align:middle;
+    margin-right:10px;
+}
+#tag_content .tag4 .success_text {
+    font-weight:bold;
+}
+#tag_content .tag2, #tag_content .tag3, #tag_content .tag4 {
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

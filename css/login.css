@@ -1,0 +1,303 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 顶部广告栏样式 */
+
+#banner_top {
+    width:100%;
+    height:100%;
+    margin-top:0px;
+    background-color:#9D2BE2;
+}
+
+
+/* 顶部天猫图标样式 */
+#ToIndex {
+    display:block;
+    width:190px;
+    height:30px;
+    margin:0px 50px;
+    background:url(../images/logo.png) left center no-repeat;
+}
+
+/* 中间部分样式 */
+
+#login_body {
+    position:relative;
+    width:100%;
+    height:600px;
+    background:#810ED5 url(../images/login_bg.png) 40px center no-repeat;
+    position:relative;
+}
+
+/* 中间广告样式 */
+
+#ToBanner {
+    display:block;
+    position:absolute;
+    top:100px;
+    left:150px;
+    width:600px;
+    height:400px;
+}
+
+/* 登录框样式 */
+#login_frame {
+    width:350px;
+    height:400px;
+    background-color:#FFF;
+    color:#333;
+    position:absolute;
+    top:100px;
+    right:150px;
+}
+#login_frame .tip_msg {
+    display:block;
+    width:120px;
+    height:25px;
+    line-height:25px;
+    font-size:12px;
+    color:#F93;
+    background-color:#FFF5FA;
+    border:1px solid #F93;
+    position:absolute;
+    top:15px;
+    right:80px;
+}
+#login_frame .tip_msg .arrow {
+    display:block;
+    width:0px;
+    height:0px;
+    border-width:7px; 
+    position:absolute;
+    top:5px;
+    border-style:solid; 
+}
+#login_frame .tip_msg .arrow_right {
+    right:-14px;
+    border-color:transparent transparent transparent #F93;
+}
+#login_frame .tip_msg .arrow_left {
+    right:-13px;
+    border-color:transparent transparent transparent #FFF5FA;
+}
+#login_frame .login_pw, #login_frame .login_code {
+    display:block;
+}
+/* 初始状态显示密码登录页面 */
+#login_frame .login_code {
+    display:none;
+}
+#login_frame .tip_picture {
+    width:60px;
+    height:60px;
+    line-height:60px;
+    position:absolute;
+    top:5px;
+    right:5px;
+}
+#login_frame .tip_picture img {
+    width:60px;
+    height:60px;
+}
+#login_frame .tip_picture .cover_picture {
+    display:block;
+    width:0px;
+    height:0px;
+    border-width:28px;
+    border-color:transparent transparent #FFF #FFF;
+    border-style:solid; 
+    position:absolute;
+    top:5px;
+    right:5px;
+}
+#login_frame .login_main {
+    margin-top:50px;
+}
+#login_frame .login_main .error_info {
+    font-size:12px;
+    color:#900;
+    width:90%;
+    height:25px;
+    line-height:25px;
+    border:1px solid #900;
+    background:url(../images/icon/error.png) no-repeat;
+    background-size:15px 15px;
+    background-position:5px center;
+    padding-left:5px;
+    margin:10px auto 0px;
+    display:none;
+}
+#login_frame .login_main h3 {
+    width:230px;
+    color:#222;
+    font-size:20px;
+    font-weight:bold;
+    text-align:left;
+    margin:0px auto;
+}
+#login_frame .wrap_msg {
+    width:230px;
+    margin:0px auto;
+}
+#login_frame input {
+    width:210px;
+    height:30px;
+    display:block;
+    float:left;
+    margin:20px 0px 0px;
+}
+#login_frame .wrap_msg .login_msg {
+    padding-left:30px;
+    border:1px solid #999;
+}
+#login_user {
+    background:url(../images/icon/user.png) 5px center no-repeat;
+    background-size:20px 20px;
+    color:#666;
+}
+#login_password {
+    background:url(../images/icon/lock.png) 5px center no-repeat;
+    background-size:20px 20px;
+}
+#login_frame .func_box {
+    display:block;
+    width:30px;
+    height:30px;
+    background-position:center center;
+    background-size:20px 20px;
+    background-repeat:no-repeat;
+    float:right;
+    margin-top:-33px;
+}
+#user_clean {
+    background-image:url(../images/icon/close_circle.png);
+}
+#pw_keybroad {
+    background-image:url(../images/icon/keybroad.png);
+}
+#login_frame #bt_submit {
+    width:240px;
+    height:40px;
+    clear:both;
+    background-color:#900;
+    font-size:20px;
+    font-weight:bold;
+    color:#FFF;
+    letter-spacing:20px;
+    text-align:center;
+    border:none;
+    margin-bottom:10px;
+}
+/* 扫码登录框样式 */
+#sweep {
+    width:230px;
+    margin:0px auto;
+}
+#sweep .code_box {
+    margin:10px auto;
+}
+#sweep .code_box img {
+    width:140px;
+    height:140px;
+    display:block;
+    margin:20px auto;
+}
+#sweep .code_box .msg {
+    padding-left:50px;
+    background:url(../images/icon/sweep.png) no-repeat;
+    background-size:30px 30px;
+    background-position:10px center;
+    line-height:20px;
+}
+#sweep .code_box .msg .discript {
+    display:block;
+    color:#666;
+    font-size:12px;
+    text-align:left;
+    height:20px;
+}
+#sweep .code_box .msg .discript a {
+    color:#900;
+    text-decoration:none;
+    display:inline-block;
+    margin:0px 8px;
+}
+#sweep .code_box .msg .discript a:hover {
+    text-decoration:underline;
+}
+
+
+
+
+#login_frame .other_msg {
+    width:240px;
+    display:block;
+    clear:both;
+    margin:0px auto;
+}
+#login_frame .other_msg a {
+    display:inline-block;
+    color:#333;
+    font-size:12px;
+    text-decoration:none;
+    margin-left:20px;
+    padding:0px;
+    float:right;
+}
+#login_frame .other_msg a:hover {
+    color:#900;
+}
+
+/* 底部样式设置 */
+#footer {
+    width:auto;
+    min-width:1283px;
+}
+#tmall_copyright {
+    height:250px;
+    padding-left:60px;
+    font-size:12px;
+}
+#tmall_copyright p {
+    clear:both;
+    height:20px;
+    line-height:20px;
+    margin:20px 0px;
+    padding:0px;
+    color:#000;
+}
+#tmall_copyright a {
+    color:#000;
+    margin-right:3px;
+    font-size:12px;
+}
+#tmall_copyright a:hover {
+    text-decoration:underline;
+}
+#tmall_copyright div {
+    margin:20px 0px;
+}
+#tmall_copyright div span {
+    display:inline-block;
+    color:#999;
+    margin-right:80px;
+    padding:5px 0px;
+}
+#tmall_copyright div span a {
+    color:#999;
+}
+#tmall_copyright div b {
+    color:#666;
+    font-weight:normal;
+    font-size:12px;
+    padding-left:4px;
+}
+
+
+
+
+
+
+
+

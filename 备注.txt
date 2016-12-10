@@ -1,0 +1,3 @@
+index.html页面显示商品类目功能待完善
+
+shoppingCart.html计价功能待完善

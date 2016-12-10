@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<!--
+        Author:许纯玲 阿玲 纯纯 洗纯纯 小纯纯 纯（假装这是一个团队o(*￣︶￣*)o）
+        
+        Creation Date:2016-11-18
+-->
+<head>
+<meta charset="utf-8">
+<title>天猫商城模仿-注册页面</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/register.css" />
+<script type="text/javascript" src="js/tool.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
+</head>
+
+<body>
+    
+    <!-- 注册协议 -->
+    <div class="horizontal_center">
+        <div id="register_agreenment">
+            <div class="close"></div>
+            <h3>注册协议</h3>
+            <p>
+                <span class="warm">【审慎阅读】</span>
+                您在申请注册流程中点击同意前，应当认真阅读以下协议。
+                <span class="warm underline">请您务必审慎阅读、充分理解协议中相关条框内容，其中包括：</span>
+            </p>
+            <ol>
+                <li class="warm underline">与您约定免除或限制责任的条款；</li>                
+                <li class="warm underline">与您约定法律适用和管辖的条款；</li>
+                <li class="warm underline">其他以粗体下划线标识的重要条款。</li>
+            </ol>
+            <p>如您对协议有任何疑问，可向平台客服咨询。</p>
+            <p>
+                <span class="warm">【特别提示】</span>
+                当您按照注册页面提示填写信息、阅读并同意协议且完成全部注册程序后，即表示您已充分阅读、理解并接受协议的全部内容。如您因平台服务与淘宝发生争议的，适用《淘宝平台服务协议》处理。如您在使用平台服务过程中与其他用户发生争议的，依您与其他用户达成的协议处理。
+            </p>
+            <p class="warm underline">阅读协议的过程中，如果您不同意相关协议或其中任何条款约定，您应立即停止注册程序。</p>
+            <ul>
+                <li class="warm link_style"><a href="#" class="link_style">《淘宝服务协议》</a></li>
+                <li class="warm link_style"><a href="#" class="link_style">《法律声明及隐私权政策》</a></li>
+                <li class="warm link_style"><a href="#" class="link_style">《支付宝服务协议》</a></li>
+            </ul>
+            <input type="button" class="agree" value="同意协议" />
+        </div>
+    </div>
+    <!-- 标签栏 -->
+    <div class="horizontal_center">
+        <div id="tag">
+            <div class="tag_general step1">
+                <span class="tag_guide">1</span>
+                <span class="tag_title">设置用户名</span>
+            </div>
+            <div class="tag_general step2">
+                <span class="tag_guide">2</span>
+                <span class="tag_title">填写账号信息</span>
+            </div>
+            <div class="tag_general step3">
+                <span class="tag_guide">3</span>
+                <span class="tag_title">设置支付方式</span>
+            </div>
+            <div class="tag_general step4">
+                <span class="tag_finish">4</span>
+                <span class="tag_title">注册成功</span>
+            </div>
+        </div>
+        <div id="tag_content">
+            <div class="tag tag1">
+                <div class="row">
+                    <span class="item">手机号</span>
+                    <select required>
+                        <option selected value="China"><span class="left">中国大陆</span><span class="right">+86</span></option>
+                        <option value="TaiWan"><span class="left">台湾</span><span class="right">+886</span></option>
+                        <option value="HongKong"><span class="left">香港</span><span class="right">+852</span></option>
+                        <option value="French"><span>法国</span><span>+33</span></option>
+                        <option value="Maldives"><span class="left">马尔代夫</span><span class="right">+960</span></option>
+                    </select>
+                    <input type="text" class="mobilephone" />
+                </div>
+                <div class="row">
+                    <span class="item">验证</span>
+                    <div class="confirm_slider">
+                        <div class="slider"></div>
+                    </div>
+                </div>
+                <input type="button" value="下一步" class="next">
+            </div>
+            <div class="tag tag2">
+                <div class="tip_name row">
+                    <span class="tip_title">设置身份信息</span>
+                    <span class="tip_explain">请务必准确填写本人的身份信息，注册后不能更改</span>
+                    <span class="tip_declaration">隐私信息未经本人许可严格保密</span>
+                </div>
+                <form name="register">
+                    <div class="row">
+                        <span class="item">真实姓名</span>
+                        <input name="user_name" type="text" class="text" />
+                        <span class="result_tip success success_user"></span>
+                        <span class="result_tip error error_user"></span>
+                    </div>
+                    <div class="row">
+                        <span class="item">性别</span>
+                        <input type="radio" name="sex" value="女" selected /><span>女</span>
+                        <input type="radio" name="sex" value="男" /><span>男</span>
+                    </div>
+                    <div class="row">
+                        <span class="item">身份证号码</span>
+                        <input name="id" type="text" class="text" />
+                        <span class="result_tip success success_id"></span>
+                        <span class="result_tip error error_id"></span>
+                    </div>
+                    <div class="row">
+                        <span class="item">有效期</span>
+                        <input name="date" type="text" class="text" placeholder="输入格式为xxxx-xx-xx" />
+                        <input type="checkbox" value="长期" />长期
+                        <span class="result_tip success success_date"></span>
+                        <span class="result_tip error error_date"></span>
+                    </div>
+                    <div class="row">
+                        <span class="item">职业</span>
+                        <select name="occupation">
+                            <option value="0">请选择</option>
+                            <option value="1">程序员</option>
+                            <option value="2">运动员</option>
+                            <option value="3">画家</option>
+                            <option value="4">歌手</option>
+                            <option value="5">商人</option>
+                            <option value="6">其他</option>
+                        </select>
+                        <span class="result_tip success success_occupation"></span>
+                        <span class="result_tip error error_occupation"></span>
+                    </div>
+                    <div class="row row_address">
+                        <span class="item">常用地址</span>
+                        <select name="province" class="address">
+                            <option value="0">请选择</option>
+                            <option value="1">广东省</option>
+                        </select>
+                        <select name="city" class="address">
+                            <option value="0">请选择</option>
+                            <option value="1">汕头市</option>
+                            <option value="2">深圳市</option>
+                            <option value="3">梅州市</option>
+                        </select>
+                        <select name="district" class="address">
+                            <option value="0">请选择</option>
+                            <option value="1">潮南区</option>
+                            <option value="2">潮阳区</option>
+                            <option value="3">澄海区</option>
+                            <option value="4">金砂区</option>
+                            <option value="5">金平区</option>
+                        </select>
+                        <span class="result_tip success success_address"></span>
+                        <span class="result_tip error error_address"></span>
+                        <textarea name="note" placeholder="请输入您的详细地址，格式为：（XX县）XX镇XX村"></textarea>
+                    </div>
+                    <input type="button" name="sure" value="确定" class="sure" />
+                </form>
+                <div class="confirm">
+                    <div class="close"></div>
+                    <p>请再确定您所输入的信息是否正确无误，如果正确请点击“下一步”，如果有错误请关闭这个窗口重新修改。</p>
+                    <input type="button" class="next" value="下一步" />
+                </div>
+            </div>
+            <div class="tag tag3">
+                <div class="tip_name row">
+                    <span class="tip_title">设置支付方式</span>
+                    <span class="tip_explain">填写银行卡号，并用此卡开通快捷支付</span>
+                    <span class="question">密</span>
+                </div>
+                <form name="payment">
+                    <div class="row">
+                        <span class="item">真实姓名</span>
+                        <input name="user_name" type="text" class="text" />
+                        <span class="result_tip success success_user"></span>
+                        <span class="result_tip error error_user"></span>
+                    </div>
+                    <div class="row">
+                        <span class="item">身份证号码</span>
+                        <input name="id" type="text" class="text" />
+                        <span class="result_tip success success_id"></span>
+                        <span class="result_tip error error_id"></span>
+                    </div>
+                    <div class="row">
+                        <span class="item">银行卡号码</span>
+                        <input name="card" type="text" class="text" />
+                        <span class="result_tip success success_card"></span>
+                        <span class="result_tip error error_card"></span>
+                    </div>
+                    <div class="row">
+                        <span class="item">手机号码</span>
+                        <input name="phone" type="text" class="text" />
+                        <span class="result_tip success success_phone"></span>
+                        <span class="result_tip error error_phone"></span>
+                    </div>
+                    <div class="row">
+                        <input type="checkbox" checked />
+                        <span class="free">免费开通余额宝服务，天弘基金：增利宝货币基金（000198）</span>
+                        <div>
+                            <a href="#" class="serve_agreemenet">《余额宝服务协议》</a>
+                            <a href="#" class="serve_agreemenet">《天弘基金管理有限公司网上交易直销自助式前台服务协议》</a>
+                        </div>
+                    </div>
+                    <input type="button" name="sure" value="同意协议并确定" class="sure" />
+                </form>
+                <div class="confirm">
+                    <div class="close"></div>
+                    <p>请再确定您所输入的信息是否正确无误，如果正确请点击“下一步”，如果有错误请关闭这个窗口重新修改。</p>
+                    <input type="button" class="next" value="下一步" />
+                </div>
+            </div>
+            <div class="tag tag4">
+                <span class="success_register"></span>
+                <span class="success_text">注册成功！可使用该账户同时登陆淘宝</span>
+                <br/>
+                <a href="index.html" class="success_text">点击此处返回首页</a>
+            </div>
+        </div>
+    </div>
+    <!-- 锁屛 -->
+    <div id="screen"></div>
+    
+</body>
+</html>

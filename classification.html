@@ -1,0 +1,919 @@
+<!doctype html>
+<html>
+
+<!--
+        Author:许纯玲 阿玲 纯纯 洗纯纯 小纯纯 纯（假装这是一个团队o(*￣︶￣*)o）
+        
+        Creation Date:2016-11-25
+-->
+
+<head>
+<meta charset="utf-8">
+<title>天猫商城模仿-分类页</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/classification.css" />
+<script type="text/javascript" src="js/tool.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/classification.js"></script>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div id="navBar">
+        <div id="navBarLeft">
+            <a href="index.html" id="ToIndex" class="a_style">天猫首页</a>
+            <a href="login.html" id="login" class="a_style">请登录</a>
+            <a href="register.html" id="register" class="a_style">免费注册</a>
+        </div>
+        <div id="navBarRight">
+            <ul class="navBarRight">
+                <li>
+                    <div class="box_nav" id="myTB">
+                        <a href="#" class="a_style">我的淘宝<span class="xiala"></span></a>
+                        <ul class="box box_l box_myTB">
+                            <li>
+                                <a href="#" class="a_style">已买到的宝贝</a>
+                            </li>
+                            <li>
+                                <a href="#" class="a_style">已卖出的宝贝</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="box_nav">               
+                        <a href="#" id="myPP" class="a_style"><span class="dot pinpai"></span>我关注的品牌</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box_nav"> 
+                        <a href="ShoppingCart.html" id="mySC" class="a_style"><span class="dot gouwuche"></span>购物车 <span id="num">0</span> 件</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box_nav" id="myLove">
+                        <a href="#" class="a_style">收藏夹<span class="xiala"></span></a>
+                        <ul class="box box_l box_myLove">
+                            <li>
+                                <a href="#" class="a_style">收藏的宝贝</a>
+                            </li>
+                            <li>
+                                <a href="#" class="a_style">收藏的店铺</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <span>|</span>
+            <ul class="navBarRight">
+                <li>
+                    <div class="box_nav" id="mobileversion">
+                        <a href="#" class="a_style"><span class="dot phone"></span>手机版</a>
+                        <ul class="box box_l box_mobileversion">
+                            <li>
+                                <a href="#" class="a_style"><img src="images/erweima1.png" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="box_nav"> 
+                        <a href="#" id="tbw" class="a_style">淘宝网</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box_nav"> 
+                        <a href="#" id="qyg" class="a_style">企业购</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box_nav" id="support">
+                        <a href="#" class="a_style">商家支持<span class="xiala"></span></a>
+                        <div class="box box_r box_support">
+                            <h3>商家：</h3>
+                            <ul class="pox_support">
+                                <li>
+                                    <a href="#" class="a_style inline">商家中心</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="a_style inline">商家入驻</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#" class="a_style inline">运营服务</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="a_style inline">商家品控</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#" class="a_style inline">商家工具</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="a_style inline">商家规则</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#" class="a_style inline">天猫智库</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="a_style inline">喵言喵语</a>
+                                </li>
+                            </ul>
+                            <h3>帮助：</h3>
+                            <ul class="pox_support">
+                                <li>
+                                    <a href="#" class="a_style inline">帮助中心</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box_nav" id="wzdh">
+                        <a href="#" class="a_style"><span class="dot list"></span>网站导航<span class="xiala"></span></a>
+                        <div class="box box_r box_wzdh">
+                            <div id="hot">
+                                <h3>热点推荐 Hot</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="a_style">天猫超市</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">喵鲜生</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">科技新品</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">女装新品</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">酷玩街</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">内衣新品</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">试美妆</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">运动新品</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">时尚先生</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">精明妈咪</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">吃乐会</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">企业采购</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="market">
+                                <h3>行业市场 Market</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="a_style">美妆</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">电器</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">女装</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">男装</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">女鞋</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">男鞋</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">内衣</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">箱包</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">运动</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">母婴</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">家装</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">医药</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">食品</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">配饰</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">汽车</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="brand">
+                                <h3>品牌风尚 Brand</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="a_style">尚天猫</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">大牌街</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">潮牌街</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">天猫原创</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">什么牌子好</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="help">
+                                <h3>服务指南 Help</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="a_style">帮助中心</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">品质保障</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">特色服务</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="a_style">7天退换货</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- 搜索框部分 -->
+    <div id="search">
+        <div class="wrap">
+            <input type="text" class="search_text" value="进口巧克力" />
+            <input type="button" class="search_bt" value="搜索" />
+        </div>
+        <div id="search_ts">
+            <ul id="search_ul">
+                <li>巧克力德芙</li>
+                <li>进口巧克力礼盒</li>
+                <li>俄罗斯进口食品</li>
+                <li>费列罗巧克力</li>
+                <li>好时巧克力</li>
+                <li>黑巧克力</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- 分类页内容 -->
+    <div class="horizontal_center">
+        <div id="content">
+            <div id="content_header">
+                <div class="header_left">
+                    <span class="header_text">全部</span>
+                    <span class="arrow"></span>
+                </div>
+                <div class="header_nav">
+                    <div class="nav_search">
+                        <input type="text" value="进口巧克力" placeholder="进口巧克力" class="header_text" />
+                        <span class="search_icon"></span>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <span class="right_text">共</span>
+                    <span class="right_text product_nums">12345</span>
+                    <span class="right_text">件相关商品</span>
+                </div>
+            </div>
+            <div id="select_list">
+                <div class="select_item">
+                    <div class="select_class">品牌</div>
+                    <div class="select_main">
+                        <ul>
+                            <li class="select_li"><a href="#" class="select_link">FERRERO ROCHER/费列罗</a></li>
+                            <li class="select_li"><a href="#" class="select_link">Lindt/瑞士莲</a></li>
+                            <li class="select_li"><a href="#" class="select_link">德菲丝</a></li>
+                            <li class="select_li"><a href="#" class="select_link">Dove/德芙</a></li>
+                            <li class="select_li"><a href="#" class="select_link">Guylian/吉利莲</a></li>
+                            <li class="select_li"><a href="#" class="select_link">HERSHEY'S/好时</a></li>
+                            <li class="select_li"><a href="#" class="select_link">Toblerone/三角</a></li>
+                            <li class="select_li"><a href="#" class="select_link">MARS/玛氏</a></li>
+                            <li class="select_li"><a href="#" class="select_link">Lotte/乐天</a></li>
+                            <li class="select_li"><a href="#" class="select_link">RitterSport/瑞特斯波特（德国）</a></li>
+                            <li class="select_li"><a href="#" class="select_link">Morinaga/森永</a></li>
+                            <li class="select_li"><a href="#" class="select_link">BACI</a></li>
+                            <li class="select_li"><a href="#" class="select_link">赫蒂</a></li>
+                            <li class="select_li"><a href="#" class="select_link">狄妮诗（瑞士）</a></li>
+                            <li class="select_li"><a href="#" class="select_link">Maltesers/麦提莎</a></li>
+                            <li class="select_li"><a href="#" class="select_link">Loacker/莱家</a></li>
+                            <li class="select_li"><a href="#" class="select_link">ROYCE'</a></li>
+                            <li class="select_li"><a href="#" class="select_link">ORION/好丽友</a></li>
+                            <li class="select_li"><a href="#" class="select_link">GRAIN de BEAUTE</a></li>
+                            <li class="select_li"><a href="#" class="select_link">张君雅小妹妹</a></li>
+                            <li class="select_li"><a href="#" class="select_link">KARSA/咔咔莎</a></li>
+                            <li class="select_li"><a href="#" class="select_link">三立（日本）</a></li>
+                            <li class="select_li"><a href="#" class="select_link">可瑞安</a></li>
+                            <li class="select_li"><a href="#" class="select_link">Yiboyo</a></li>
+                            <li class="select_li"><a href="#" class="select_link">海太</a></li>
+                            <li class="select_li"><a href="#" class="select_link">Munchy's/马奇新新</a></li>
+                            <li class="select_li"><a href="#" class="select_link">swissmiss/瑞士小姐（美国）</a></li>
+                            <li class="select_li"><a href="#" class="select_link">TIPO</a></li>
+                            <li class="select_li"><a href="#" class="select_link">Bormioli Rocco</a></li>
+                            <li class="select_li"><a href="#" class="select_link">松尾</a></li>
+                            <li class="select_li"><a href="#" class="select_link">满意轩</a></li>
+                            <li class="select_li"><a href="#" class="select_link">neo</a></li>
+                        </ul>
+                        <div class="select_more">更多</div>
+                        <div class="select_hide">收起</div>
+                    </div>
+                </div>
+                <div class="select_item">
+                    <div class="select_class">休闲零食</div>
+                    <div class="select_main">
+                        <ul>
+                            <li class="select_li"><a href="#" class="select_link">黑巧克力</a></li>
+                            <li class="select_li"><a href="#" class="select_link">夹心巧克力</a></li>
+                            <li class="select_li"><a href="#" class="select_link">果仁巧克力</a></li>
+                            <li class="select_li"><a href="#" class="select_link">牛奶巧克力</a></li>
+                            <li class="select_li"><a href="#" class="select_link">松露巧克力</a></li>
+                            <li class="select_li"><a href="#" class="select_link">白巧克力</a></li>
+                            <li class="select_li"><a href="#" class="select_link">其他巧克力</a></li>
+                            <li class="select_li"><a href="#" class="select_link">饼干</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="select_item">
+                    <div class="select_class">天猫超市</div>
+                    <div class="select_main">
+                        <ul>
+                            <li class="select_li"><a href="#" class="select_link">零食/饼干/巧克力/糖果</a></li>
+                            <li class="select_li"><a href="#" class="select_link">夹心巧克力</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="select_item">
+                    <div class="select_class">其他分类</div>
+                    <div class="select_main">
+                        <ul>
+                            <li class="select_li"><a href="#" class="select_link">进口食品</a></li>
+                            <li class="select_li"><a href="#" class="select_link">天猫国际</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="sort_bar">
+                <div id="sort_list">
+                    <div class="sort_list"><span class="sort_title">综合</span><span class="sort_way"></span></div>
+                    <div class="sort_list"><span class="sort_title">人气</span><span class="sort_way"></span></div>
+                    <div class="sort_list"><span class="sort_title">新品</span><span class="sort_way"></span></div>
+                    <div class="sort_list"><span class="sort_title">销量</span><span class="sort_way"></span></div>
+                    <div class="sort_list"><span class="sort_title">价格</span><span class="sort_up"></span><span class="sort_down"></span></div>
+                </div>
+                <div id="select_place">
+                    <div class="place_name">收货地：</div>
+                    <input type="text" value="梅州" />
+                </div>
+                <div id="price_range">
+                    <div class="range_li">
+                        <span class="price_tip">￥</span>
+                        <input type="text" class="sort_price" placeholder="请输入" />
+                    </div>
+                    <span class="price_tip">&nbsp;一&nbsp;</span>
+                    <div class="range_li">
+                        <span class="price_tip">￥</span>
+                        <input type="text" class="sort_price"placeholder="请输入" />
+                    </div>
+                </div>
+                <div id="select_discount">
+                    <div class="discount_li">
+                        <input type="checkbox" class="select_box" />
+                        <span class="discount_text">包邮</span>
+                    </div>
+                    <div class="discount_li">
+                        <input type="checkbox" class="select_box" />
+                        <span class="discount_text">折扣</span>
+                    </div>
+                    <div class="discount_li">
+                        <input type="checkbox" class="select_box" />
+                        <span class="discount_text">搭配减价</span>
+                    </div>
+                    <div class="discount_more">更多</div>
+                </div>
+                <div id="scan_way">
+                    <div class="shop_way scan_way">店铺</div>
+                    <div class="big_way scan_way">大图</div>
+                    <div class="small_way scan_way">小图</div>
+                </div>
+                <div id="select_page">
+                    <div class="page_nums select_page">
+                        <span class="cur_page">1</span>
+                        <span>/</span>
+                        <span class="total_page">100</span>
+                    </div>
+                    <div class="page_prev select_page"></div>
+                    <div class="page_next select_page"></div>
+                </div>
+            </div>
+            <div id="content_main">
+                <div id="main_body">
+                    <ul>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB1d78nJFXXXXataXXXXXXXXXXX_!!0-item_pic.jpg_b.jpg" />
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">99.00</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">德菲丝法国原味1kg进口松露形巧克力</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">德菲丝旗舰店</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">1.1万笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">8329</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB25ouOcH1K.eBjSsphXXcJOXXa_!!411540478.jpg_b.jpg" />
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">39.00</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">KDV俄罗斯紫皮糖1000g进口kpokaht</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">优之良品食品专营店</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">8424笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">6692</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB2EtjyXr3c61BjSZFMXXbxIVXa_!!1014978183.jpg_b.jpg" />
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">34.00</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">韩国进口lottle乐天72*/56%高纯度黑</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">沐丰食品专营店</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">7699笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">3733</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB2Oqp6mFXXXXbfXpXXXXXXXXXX_!!1899300163.jpg_b.jpg" />
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">39.80</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">俄罗斯进口KDV紫皮糖1000g扁桃仁酥</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">乐荷食品专营店</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">4964笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">1684</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB1PmvtLpXXXXbIXpXXXXXXXXXX_!!0-item_pic.jpg_b.jpg" />
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">9.90</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">【天猫超市】日本进口 森永DARS搭诗</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">天猫超市</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">2.9万笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">1.3万</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB27vyjsVXXXXbRXXXXXXXXXXXX_!!735599824.png_b.jpg" />
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">87.60</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">日本生巧进口royce生巧克力北海道礼</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">单尚食品专营店</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">6172笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">1359</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB191mFMVXXXXXTXFXXXXXXXXXX_!!0-item_pic.jpg_b.jpg" />
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">65.00</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">德国进口零食knoppers榛子巧克力咸</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">STORCK海外旗舰店</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">1.3万笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">2545</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB2mjkFtpXXXXbaXXXXXXXXXXXX_!!2940654135.jpg_b.jpg" />
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">15.80</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">RitterSport德国进口瑞特斯波德巧克力</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">伊纳思食品专营店</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">6180笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">7928</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB2wjNda9OI.eBjy1zkXXadxFXa_!!1830313372.jpg_b.jpg" />
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">148.00</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">Baci芭喜意大利进口巧克力礼盒装情人</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">baci旗舰店</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">1411笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">2.1万</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB1XvvuNVXXXXckXVXXXXXXXXXX_!!0-item_pic.jpg_b.jpg" />
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">119.00</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">【天猫超市】美国进口瑞士莲软心精选</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">天猫超市</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">1.2万笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">3119</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB1nGeVLXXXXXaOXpXXXXXXXXXX_!!0-item_pic.jpg_b.jpg" />
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">36.90</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">Lindt瑞士莲进口零食60%可可特浓软</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">Lindt瑞士莲海外旗舰店</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">1633笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">305</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB2AXO6cp5N.eBjSZFmXXboSXXa_!!619123122.jpg_b.jpg" />
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">32.90</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">得过进口果仁夹心巧克力小包装多口味</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">良品铺子旗舰店</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">6898笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">884</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB2gkVHaGnD11BjSsziXXaReVXa_!!877104952.jpg_b.jpg" />
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">79.90</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">奥地利进口巧克力德芙巧丝威化夹心巧克力</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">德芙官方旗舰店</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">1.2万笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">7.0万</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB2kq6iaFHzQeBjSZFsXXbGvXXa_!!834629522.jpg_b.jpg"/>
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">99.00</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">费列罗榛果威化巧克力T48盒生日礼物</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">嘉年华食品专营店</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">18万笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">260</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="details.html" class="product_img">
+                                <img src="images/商品图/TB18y1lNFXXXXawXVXXXXXXXXXX_!!0-item_pic.jpg_b.jpg" />
+                            </a>
+                            <div class="price_area">
+                                <span class="price_tip">￥</span>
+                                <span class="product_price">59.00</span>
+                            </div>
+                            <a href="details.html" class="product_link">
+                                <span class="product_name">德菲丝法国进口松露形巧克力黑色传统</span>
+                            </a>
+                            <a href="details.html" class="product_link">
+                                <span class="shop_name">德菲丝旗舰店</span>
+                            </a>
+                            <div class="product_msg">
+                                <span class="product_text">月成交</span>
+                                <span class="sales">1929笔</span>
+                                <span class="product_text">评价</span>
+                                <span class="estimate_num">2617</span>
+                                <span class="wangwang"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="main_page">
+                    <span class="page_prev">上一页</span>
+                    <span class="page_index">1</span>
+                    <span class="page_index">2</span>
+                    <span class="page_index">3</span>
+                    <span class="page_index">4</span>
+                    <span class="page_index">5</span>
+                    <span class="page_next">下一页</span>
+                    <span class="page_text">共<span class="page_num">100</span>页</span>
+                    <span class="page_text">到第<input type="text" value="1" class="page_target" />页</span>
+                    <input type="button" value="确定" class="page_ok" />
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <!-- 底部 -->
+    <div id="footer">
+        <div id="tmall_ensure">
+            <a href="#" class="a_style footer_e"></a>
+            <a href="#" class="a_style footer_e"></a>
+            <a href="#" class="a_style footer_e"></a>
+            <a href="#" class="a_style footer_e"></a>
+        </div>
+        <div id="tmall_desc">
+            <dl id="guide" class="tmall_desc">
+                <dt><h3>购物指南</h3></dt>
+                <dd>
+                    <a href="#" class="a_style guide">免费注册</a>
+                    <a href="#" class="a_style guide">开通支付宝</a>
+                    <a href="#" class="a_style guide">支付宝充值</a>
+                </dd>
+            </dl>
+            <dl id="ensure" class="tmall_desc">
+                <dt><h3>天猫保障</h3></dt>
+                <dd>
+                    <a href="#" class="a_style ensure">发票保障</a>
+                    <a href="#" class="a_style ensure">售后规则</a>
+                    <a href="#" class="a_style ensure">缺货赔付</a>
+                </dd>
+            </dl>
+            <dl id="payment" class="tmall_desc">
+                <dt><h3>支付方式</h3></dt>
+                <dd>
+                    <a href="#" class="a_style payment">快捷支付</a>
+                    <a href="#" class="a_style payment">信用卡</a>
+                    <a href="#" class="a_style payment">余额宝</a>
+                    <a href="#" class="a_style payment">蚂蚁花呗</a>
+                    <a href="#" class="a_style payment">货到付款</a>
+                </dd>
+            </dl>
+            <dl id="seller" class="tmall_desc">
+                <dt><h3>商家服务</h3></dt>
+                <dd>
+                    <a href="#" class="a_style seller">商家入驻</a>
+                    <a href="#" class="a_style seller">商家中心</a>
+                    <a href="#" class="a_style seller">天猫智库</a>
+                    <a href="#" class="a_style seller">天猫规则</a>
+                    <a href="#" class="a_style seller">物流服务</a>
+                    <a href="#" class="a_style seller">喵言喵语</a>
+                    <a href="#" class="a_style seller">运营服务</a>
+                </dd>
+            </dl>
+            <dl id="mobile" class="tmall_desc">
+                <dt><h3>手机天猫</h3></dt>
+                <dd><img src="images/erweima2.png" /></dd>
+            </dl>
+        </div>
+        <div id="tmall_copyright">
+            <p>
+                <a href="#" class="a_style">关于天猫</a>
+                <a href="#" class="a_style">帮助中心</a>
+                <a href="#" class="a_style">开放中心</a>
+                <a href="#" class="a_style">诚聘英才</a>
+                <a href="#" class="a_style">联系我们</a>
+                <a href="#" class="a_style">网站合作</a>
+                <a href="#" class="a_style">法律声明</a>
+                <a href="#" class="a_style">知识产权</a>
+                <a href="#" class="a_style">廉正举报</a>
+                <a href="#" class="a_style">规则意见征集</a>
+            </p>
+            <p>
+                <a href="#" class="a_style">阿里巴巴集团</a>|
+                <a href="#" class="a_style">淘宝网</a>|
+                <a href="#" class="a_style">天猫</a>|
+                <a href="#" class="a_style">聚划算</a>|
+                <a href="#" class="a_style">全球速卖通</a>|
+                <a href="#" class="a_style">阿里巴巴国际交易市场</a>|
+                <a href="#" class="a_style">1688</a>|
+                <a href="#" class="a_style">阿里妈妈</a>|
+                <a href="#" class="a_style">阿里旅行·去啊</a>|
+                <a href="#" class="a_style">阿里云计算</a>|
+                <a href="#" class="a_style">YunOS</a>|
+                <a href="#" class="a_style">阿里通信</a>|
+                <a href="#" class="a_style">万网</a>|
+                <a href="#" class="a_style">高德</a>|
+                <a href="#" class="a_style">优视</a>|
+                <a href="#" class="a_style">友盟</a>|
+                <a href="#" class="a_style">虾米</a>|
+                <a href="#" class="a_style">阿里星球</a>|
+                <a href="#" class="a_style">来往</a>|
+                <a href="#" class="a_style">钉钉</a>|
+                <a href="#" class="a_style">支付宝</a>
+            </p>
+            <div>
+                <span>增值电信业务经营许可证：<a href="#" class="a_style">浙B2-20110446</a></span>
+                <span>网络文化经营许可证：<a href="#" class="a_style">浙网文[2015]0295-065号</a></span>
+                <span>互联网医疗保健信息服务 审核同意书 浙卫网审 【2014】 6号</span>
+                <br />
+                <span>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</span>
+                <br />
+                <b>© 2003-2016 TMALL.COM 版权所有</b>
+            </div>
+            <div>
+                <a href="#" class="a_style"><img src="images/gongshang.jpg" /></a>
+                <a href="#" class="a_style"><img src="images/xukezheng.jpg" /></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 右侧边栏 -->
+    <div id="sideBar_right">
+        <div id="sbr_a">
+            <div id="sbr_other">
+            </div>
+            <div>
+                <div id="venue" class="box_sbr"></div>
+                <div id="tips" class="box_sbr"></div>
+            </div>
+        </div>
+        <div id="sbr_tq"></div>
+        <div id="sbr_car">购物车</div>
+        <div id="op">
+            <div id="pay" class="sbr_cell"></div>
+            <div id="like" class="sbr_cell"></div>
+            <div id="star" class="sbr_cell"></div>
+            <div id="history" class="sbr_cell"></div>
+            <div id="cz" class="sbr_cell"></div>
+            <div id="ewm" class="sbr_cell"></div>
+            <div id="edit" class="sbr_cell"></div>
+            <div id="top_right" class="sbr_cell"></div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
