@@ -40,16 +40,21 @@
 
 存在的问题
 * 点击添加商品再减少商品数目价格会出错
-![shoopingCartImg](./成品图/shoopingCart.png)
+![shoopingCartImg](./成品图/ShoppingCart.png)
 
 ### 注册页面
 实现的特效
 * 检测表单内容是否符合要求
 * 输入信息的提示
-![registerImg](./成品图/register.png)
+![registerImg0](./成品图/register0.png)
+![registerImg1](./成品图/register1.png)
+![registerImg2](./成品图/register2.png)
+![registerImg3](./成品图/register3.png)
+![registerImg4](./成品图/register4.png)
 
 ### 登录页面
 实现的特效
 * 点击切换登录方式
 * 检测账户、密码是否已输入
-![loginImg](./成品图/login.png)
+![loginImg1](./成品图/login1.png)
+![loginImg2](./成品图/login2.png)
