@@ -126,7 +126,7 @@ $(function () {
             $('.product_nums').html(nums);
             $('.price_total').text(total.toFixed(2));
             for (var i = 0; i < $('.product_total .price_total').length(); i++) {
-                all = parseFloat(all) + parseFloat($('.product_total .price_total').obj(i).text());
+                all = parseFloat(all) - parseFloat($('.product_total .price_total').obj(i).text());
             }
             $('.title_other .price_total').text(all.toFixed(2));
         }
