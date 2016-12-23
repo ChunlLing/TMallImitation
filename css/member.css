@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+a {
+    text-decoration:none;
+}
+
+a.a_style {
+    color:#222;
+}
+
+a.a_style:hover {
+    color:#900;
+}
+
+/* 内容样式 */
+#content {
+    position:relative;
+    width:100%;
+    background-color:#9C3;
+    height:600px;
+}
+
+/* 内容顶部样式 */
+#content_top {
+}
+
+
+/* 内容顶部导航栏样式 */
+#nav_bar {
+    overflow:hidden;
+    background-color:#099;
+}
+
+#nav_bar ul {
+    float:left;
+    overflow:hidden;
+}
+
+#nav_bar ul li {
+    float:left;
+    margin:0px 10px;
+}
+
+#nav_bar ul li span.nav_title {
+    font-size:14px;
+    font-weight:bold;
+    color:#111;
+}
+
+#nav_bar ul li a {
+    display:block;
+    font-size:12px;
+    color:#222;
+}
+
+#nav_bar .integral_draw {
+    float:right;
+    font-size:14px;
+    color:#222;
+}
+
+
+
+
+
+
+/* 底部样式设置 */
+#footer {
+    width:auto;
+    min-width:1283px;
+}
+#tmall_ensure {
+    clear:both;
+    width:1190px;
+    height:100px;
+    text-align:center;
+    margin:20px auto;
+    padding:0px;
+    background:url(../images/ensure.jpg) no-repeat center center;
+}
+.footer_e {
+    display:block;
+    width:297px;
+    height:100px;
+    margin:0px;
+    float:left;
+}
+#tmall_desc {
+    height:240px;
+    width:90%;
+    margin:0px 5%;
+    padding:0px;
+    background:url(../images/tianmao3.png) 0px bottom no-repeat;
+    border-top:1px solid #999;
+}
+.tmall_desc {
+    width:16%;
+    float:left;
+    padding:0px 20px;
+    text-align:center;
+    margin-bottom:0px;
+}
+.tmall_desc dd {
+    margin:0px;
+}
+.tmall_desc a {
+    font-size:12px;
+    display:block;
+    margin:5px 0px;
+}
+#tmall_copyright {
+    height:250px;
+    padding-left:60px;
+    border-top:2px solid #c00;
+    background:#222;
+    font-size:12px;
+}
+#tmall_copyright p {
+    clear:both;
+    height:20px;
+    line-height:20px;
+    margin:20px 0px;
+    padding:0px;
+    color:#fff;
+}
+#tmall_copyright a {
+    color:#fff;
+    margin-right:3px;
+    font-size:12px;
+}
+#tmall_copyright div {
+    margin:20px 0px;
+}
+#tmall_copyright div span {
+    display:inline-block;
+    color:#999;
+    margin-right:80px;
+    padding:5px 0px;
+}
+#tmall_copyright div span a {
+    color:#999;
+}
+#tmall_copyright div b {
+    color:#666;
+    font-weight:normal;
+    font-size:12px;
+    padding-left:4px;
+}

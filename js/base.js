@@ -635,7 +635,11 @@ Base.prototype.animate = function (obj) {
     }
     return this;
 };
-
+/*
+Base.prototype.on = function (type, selector, fn) {
+    return addEvent(this, type, selector, fn);
+};
+*/
 // 插件入口
 Base.prototype.extend = function (name, fn) {
     Base.prototype[name] = fn;

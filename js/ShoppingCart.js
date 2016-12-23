@@ -53,6 +53,9 @@ $(function () {
         alert(document.getElementsByTagName(all));
         alert(all.checked);
     };*/
+    
+    $('#select_all').ge(0).clicked = true;
+    console.log($('#select_all').first().clicked);
     // 点击全选
     $('#select_all').click(function () {
         if ($(this).first().checked) {
@@ -71,9 +74,19 @@ $(function () {
         }
     });
     
+/*    $('#header').on('click', '.select_box', function (event) {
+        alert('test!');
+    });
+    console.log($('#select_all').first().clicked);
+    */
     // 点击全选店铺中的所有商品
     $('.content_name .select_box').click(function () {
         if ($(this).first().checked) {
+            if (!$('#select_all').first().clicked) {
+                console.log($('#select_all').first().clicked);
+            $('#select_all').first().clicked = true;
+            }
+            console.log($('#shop_main .select_box').length());
             for (var i = 0; i < $('#shop_main .select_box').length(); i++) {
                 $('#shop_main .select_box').ge(i).checked = true;
             }
@@ -82,6 +95,10 @@ $(function () {
             }
             $('.title_other .price_total').text(all.toFixed(2));
         } else {
+            if ($('#select_all').first().clicked) {
+                console.log('取消选择');
+                console.log($('#select_all').first().clicked);
+            }
             $('#select_all').first().clicked = false;
             for (var i = 0; i < $('#shop_main .select_box').length(); i++) {
                 $('#shop_main .select_box').ge(i).checked = false;
