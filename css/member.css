@@ -20,6 +20,53 @@ a {
 #content_top {
 }
 
+/* 天猫会员缩略菜单样式 */
+#member_nav {
+    position:relative;
+    float:left;
+    left:6%;
+}
+
+#member_nav .member_logo {
+    display:table-cell;
+    width:121px;
+    height:43px;
+    background:url(../images/icon/TB1UsQPIpXXXXXmXpXX.jSw.XXX-121-43.png) no-repeat center center;
+    float:left;
+}
+
+#member_nav .more_list {
+    float:left;
+    background-color:#FFF;
+    border:1px solid #CCC;
+    font-size:12px;
+    position:relative;
+    top:11px;
+}
+
+#member_nav .more_list .more {
+    width:50px;
+    height:22px;
+    line-height:20px;
+    cursor:pointer;
+    text-indent:5px;
+    background:url(../images/icon/down_gray.png) no-repeat right center;
+}
+
+#member_nav .more_list ul {
+    margin:0px;
+    width:100px;
+    display:none;
+}
+
+#member_nav .more_list ul li {
+    width:50px;
+    float:left;
+    background-color:#CF0;
+}
+
+#member_nav .more_list ul li a.a_style {
+}
 
 /* 内容顶部导航栏样式 */
 #nav_bar {
@@ -55,10 +102,6 @@ a {
     text-align:center;
 }
 
-#nav_bar ul li span.nav_title:hover {
-    color:#900;
-}
-
 #nav_bar ul li span.nav_title.drop_arrow {
     background-image:url(../images/icon/down_gray.png);
     background-repeat:no-repeat;
@@ -77,14 +120,17 @@ a {
     color:#222;
 }
 
-#nav_bar ul li .drop_list a.a_style:hover {
-    color:#900;
-}
-
 #nav_bar .integral_draw {
     float:right;
     font-size:14px;
     color:#222;
+    cursor:pointer;
+}
+
+#nav_bar ul li span.nav_title:hover, 
+#nav_bar ul li .drop_list a.a_style:hover, 
+#nav_bar .integral_draw:hover, {
+    color:#900;
 }
 
 
