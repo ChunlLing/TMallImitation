@@ -48,5 +48,18 @@ $(function () {
         $('.box_wzdh').hide();
     });
     
+    // 导航栏下拉列表显示
+    $('#nav_bar ul li').hover(function() {
+        if ($(this).find('.drop_list').ge(0) != undefined) {
+            $(this).find('.drop_list').show();
+            $(this).css('border', '1px solid #CCC');
+        }
+    }, function () {
+        if ($(this).find('.drop_list').show()) {
+            $(this).find('.drop_list').hide();
+        }
+        $(this).css('border', 'none');
+    });
+    
     
 });
