@@ -48,6 +48,15 @@ $(function () {
         $('.box_wzdh').hide();
     });
     
+    // 更多缩略框
+    $('#member_nav .more_list').hover(function () {
+        $(this).find('.more').css('borderBottomColor', '#FFF').css('borderBottomWidth', '4');
+        $(this).find('ul').show();
+    }, function () {
+        $(this).find('.more').css('borderBottomColor', '#CCC').css('borderBottomWidth', '1');
+        $(this).find('ul').hide();
+    });
+    
     // 导航栏下拉列表显示
     $('#nav_bar ul li').hover(function() {
         if ($(this).find('.drop_list').ge(0) != undefined) {

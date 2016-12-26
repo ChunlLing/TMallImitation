@@ -28,7 +28,6 @@ a {
 }
 
 #member_nav .member_logo {
-    display:table-cell;
     width:121px;
     height:43px;
     background:url(../images/icon/TB1UsQPIpXXXXXmXpXX.jSw.XXX-121-43.png) no-repeat center center;
@@ -38,10 +37,11 @@ a {
 #member_nav .more_list {
     float:left;
     background-color:#FFF;
-    border:1px solid #CCC;
     font-size:12px;
     position:relative;
     top:11px;
+    z-index:2;
+    margin-left:10px;
 }
 
 #member_nav .more_list .more {
@@ -51,18 +51,26 @@ a {
     cursor:pointer;
     text-indent:5px;
     background:url(../images/icon/down_gray.png) no-repeat right center;
+    border:1px solid #CCC;
+    z-index:2;
 }
 
 #member_nav .more_list ul {
+    position:absolute;
     margin:0px;
     width:100px;
+    overflow:hidden;
+    border:1px solid #CCC;
+    background-color:#FFF;
+    padding:10px 5px;
     display:none;
+    z-index:1;
 }
 
 #member_nav .more_list ul li {
     width:50px;
+    padding:5px 0px;
     float:left;
-    background-color:#CF0;
 }
 
 #member_nav .more_list ul li a.a_style {
@@ -125,11 +133,13 @@ a {
     font-size:14px;
     color:#222;
     cursor:pointer;
+    background:url(../images/icon/TB1.wJdHXXXXXXpXpXX1DxgFpXX-20-20.png) no-repeat left center;
+    padding-left:25px;
 }
 
 #nav_bar ul li span.nav_title:hover, 
 #nav_bar ul li .drop_list a.a_style:hover, 
-#nav_bar .integral_draw:hover, {
+#nav_bar .integral_draw:hover {
     color:#900;
 }
 
